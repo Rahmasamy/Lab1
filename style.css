@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: #65c0ba;
+  color: #fff;
+}
+
+::selection a {
+  background-color: #65c0ba;
+  color: #fff;
+}
+body {
+  background: #fff;
+  /* font-family: "Mukta Mahee", arial, sans-serif; */
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6c757d;
+  position: absolute;
+  z-index: -100;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Abril Fatface;
+  font-family: sans-serif;
+  /* border: solid; */
+}
+/* .main-body{
+        z-index: -111;
+    } */
+section {
+  padding: 7em 0;
+  scroll-behavior: smooth;
+}
+header {
+  /* border: 1px solid; */
+  padding: 3rem 0;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+nav {
+  /* border: 1px solid ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+nav .logo {
+  font-size: x-large;
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: "Abril Fatface", "times", serifs;
+  color: #fff;
+}
+
+nav .menu {
+  /* border: 1px solid ; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+nav .menu .menu-child {
+  border: 1px solid #ccc;
+  width: 3rem;
+  height: 4px;
+  display: inline-block;
+  background-color: #fff;
+  transition: all 0.5s linear;
+}
+
+nav .menu:hover .menu-child:nth-child(2) {
+  display: none;
+  transition: all 0.5s linear;
+}
+
+nav .menu:hover .menu-child:nth-child(1) {
+  transform: rotate(300deg);
+  transition: all 0.5s linear;
+}
+
+nav .menu:hover .menu-child:nth-child(3) {
+  transform: rotate(242deg);
+  transition: all 0.5s linear;
+}
+
+.sec1-bg {
+  background: url(./1bg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec1-bg::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.224);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.sec1-bg .container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  /* border: 1px solid red; */
+  text-align: center;
+  height: 400px;
+  z-index: 3;
+}
+.container .container-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+.container .container-child h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.container .container-child p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: sans-serif !important;
+}
+
+.container .container-child p .a-in-p {
+  font-size: 1.5rem;
+  color: #ccc;
+  font-family: sans-serif !important;
+  transition: color 0.3s linear;
+  margin-top: 10px;
+}
+.container .container-child p .a-in-p:hover {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.3s linear;
+}
+
+.container .container-child .btn-1 a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif !important;
+  letter-spacing: 0.2em;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 18px 1.7rem;
+  margin-top: 20px;
+  transition: all 0.2s linear;
+}
+.container .container-child .btn-1 a:hover {
+  color: #000;
+  background-color: #fff;
+  transition: all 0.2s linear;
+}
+.next-section {
+  position: absolute;
+  bottom: 10px;
+  left: 47%;
+}
+.next-section a {
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 3;
+  width: 100px;
+  font-size: 10px;
+  transition: all 0.2s linear;
+  scroll-behavior: smooth;
+}
+
+/* ============================= end css section one ============================= */
+
+.sec2 .container {
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+}
+.sec2 .container .in-container-sec2 {
+  width: 78%;
+
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.in-container-sec2 .parent-left-image {
+  width: 47%;
+  height: auto;
+}
+
+.in-container-sec2 .parent-left-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.in-container-sec2 .parent-right {
+  width: 47%;
+  line-height: 2.4rem;
+  color: #6c757d;
+  font-family: sans-serif !important;
+  padding: 15px 10px;
+}
+.sec2 .sec2-h2 {
+  font-family: sans-serif !important;
+  color: #000;
+}
+.in-container-sec2 .parent-right p {
+  width: 90%;
+  word-wrap: break-word;
+  font-family: "Mukta Mahee", arial, sans-serif;
+}
+
+.in-container-sec2 .parent-right p:nth-child(3) {
+  margin-top: 15px;
+}
+.sec2 .link-sec2 {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  color: #65c0ba;
+  font-weight: 600;
+  transition: all 0.3s linear;
+  margin-top: 3rem;
+}
+.sec2 .btn-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #00000064;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+.sec2 .play-icon {
+  display: inline-block;
+  border-top: 7px solid #de0c0c00;
+  border-left: 7px solid #00000000;
+  border-right: 7px solid #65c0ba;
+  border-bottom: 7px solid #65c0ba;
+  transform: rotate(315deg);
+}
+.sec2 .link-sec2:hover .btn-play {
+  border: 1px solid #000000;
+  transition: all 0.3s linear;
+}
+.sec2 .link-sec2:hover .play-icon {
+  border-right: 7px solid #000000;
+  border-bottom: 7px solid #000000;
+  transition: all 0.3s linear;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  /* background-color: #3498db; */
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  animation: shadow-pulse 1s infinite alternate;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 40px #65c0ba;
+  }
+}
+/* ============================= end css section Two ============================= */
+
+.sec3 {
+  width: 100%;
+  background-color: #fafafa;
+}
+.sec3 .container {
+  width: 79%;
+  margin: auto;
+}
+.sec3 .container .parent-sec3-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sec3 .container .parent-sec3-flex .sec3-top {
+  /* border: solid; */
+  text-align: center;
+  width: 40em;
+}
+.sec3 .container .sec3-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+.sec3-bottom .item-sec3 {
+  width: 22.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3.9rem;
+}
+.sec3-bottom .item-sec3 img {
+  width: 80px;
+  object-fit: fill;
+}
+
+/* ============================= end css section Three ============================= */
+
+.sec4 {
+  width: 100%;
+  padding: 0rem 0;
+  /* border-bottom: 1px solid #ccc; */
+  position: relative;
+}
+.sec4 .container {
+  width: 79%;
+  margin: auto;
+  transform: translateY(165px);
+}
+.sec4 .in-container-top,
+.in-container-bottom {
+  width: 100%;
+  /* border: #000 solid; */
+  text-align: center;
+}
+.sec4 .in-container-top .in-sec4-top {
+  width: 40em;
+  margin: auto;
+}
+
+.in-sec4-top .heading {
+  font-size: 3.8rem;
+  font-family: Abril Fatface;
+  color: #000;
+  line-height: 3.9rem;
+}
+
+.in-sec4-top .lead-p {
+  font-size: 1.2rem;
+  font-family: Mukta Mahee;
+  color: #000;
+  margin: 2.9rem 0;
+}
+.parent-img-s4 {
+  position: relative;
+  z-index: 1000;
+}
+
+.in-sec4-botm .parent-img-s4 .img-fluid {
+  width: 80%;
+  transform: translateY(30px);
+  box-shadow: 2px 2px 5px 5px #00000049;
+}
+
+/* ============================= end css section four ============================= */
+
+.sec5 {
+  width: 100%;
+  background-color: hsl(176, 42%, 57%);
+  position: relative;
+  z-index: -1;
+  /* padding-top: 10rem; */
+  overflow: hidden;
+}
+.sec5 .befour {
+  position: absolute;
+  width: 150%;
+  height: 400px;
+  background-color: #fff;
+  transform: rotate(-4deg) translateX(-50%) translateY(-50%);
+  top: -190px;
+  left: 50%;
+  z-index: -1;
+}
+.sec5 .container {
+  width: 79%;
+  margin: 200px auto;
+  margin-bottom: 3rem;
+}
+.sec5 .container .in-sec5-top {
+  /* border: 1px solid; */
+  text-align: center;
+}
+.sec5 .container .in-sec5-top h2 {
+  color: #000;
+  font-size: 3.8rem;
+  font-family: Abril Fatface;
+  color: #000;
+  /* line-height: 3.9rem; */
+}
+.sec5 .container .in-sec5-top .lead {
+  width: 40em;
+  margin: auto;
+}
+
+.sec5 .in-sec5-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3.5rem;
+  /* padding-bottom: 3rem; */
+}
+.sec5 .in-sec5-bottom .item-sec5 {
+  /* border: solid; */
+  width: calc(90% / 3);
+  z-index: 10000000 !important;
+  background-color: #fff;
+}
+
+.in-sec5-bottom .item-sec5 .parent-img-sec5 {
+  width: 100%;
+}
+.item-sec5 .parent-img-sec5 img {
+  width: 100%;
+}
+
+.item-sec5 .content-sec5 {
+  padding: 2rem;
+}
+.content-sec5 .meta-post {
+  color: #6c757d68;
+}
+.content-sec5 h2 {
+  line-height: 2.2rem;
+  margin: 10px 0;
+}
+.content-sec5 h2 a {
+  text-decoration: none;
+  color: #000;
+}
+.content-sec5 p {
+  font-size: 17px;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+.sec5-buttom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: solid; */
+  width: 95%;
+  margin: auto;
+  font-style: italic;
+}
+.sec5-buttom .item-sec6 {
+  width: calc(90% / 3);
+  /* border: solid; */
+}
+/* ============================= end css section Five ============================= */
+.sec6 {
+  background-color: #fafafa;
+  /* border: solid; */
+}
+.sec6 .container {
+  width: 80%;
+  margin: auto;
+}
+.sec6-top {
+  /* border: solid; */
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-family: Abril Fatface;
+  font-family: Mukta Mahee;
+}
+
+.sec6-top .heading {
+  text-align: center;
+  font-family: Abril Fatface;
+  color: #000;
+  font-weight: 500;
+}
+
+.author-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.author-image img {
+  width: 100%;
+}
+/* ============================= end css section Six ============================= */
+
+.sec7 {
+  background: #fff;
+}
+
+.sec7 .container {
+  width: 80%;
+  margin: auto;
+}
+.sec7 .p-heading {
+  width: 36em;
+  /* border: solid; */
+  text-align: center;
+  margin: auto;
+}
+.sec7 .p-heading h2 {
+  color: #000;
+  font-family: Abril Fatface;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+.sec7 .lead {
+  color: #6c757d00;
+}
+
+.in-sec7-bottom {
+  /* border: solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.in-sec7-bottom .item-sec7 {
+  width: calc(90% / 4);
+}
+.in-sec7-bottom .item-sec7 img {
+  width: 100%;
+}
+.item-sec7 h3 {
+  color: #000;
+  font-family: Abril Fatface;
+}
+.item-sec7 h3 a {
+  text-decoration: none;
+  color: #000;
+  font-family: Abril Fatface;
+  font-weight: 300;
+}
+
+.befo {
+  position: relative;
+}
+
+.befo::before {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 5px;
+  height: 4px;
+  top: 8px;
+  left: -14px;
+  transform: rotate(-96deg);
+}
+
+/* ============================= end css section Seven ============================= */
+
+.foot {
+  background-color: #000;
+  color: #fafafa;
+  padding: 7rem 0;
+}
+.foot .container {
+  width: 80%;
+  margin: auto;
+}
+.foot .container .in-p-foot {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.foot .container .in-p-foot .foot-items {
+  width: calc(95% / 4);
+  font-family: Abril Fatface;
+}
+.in-p-foot .foot-items h3 {
+  font-family: Abril Fatface;
+  font-weight: 300;
+  color: #fff;
+}
+.foot-items ul {
+  list-style: none;
+  width: 95%;
+}
+.foot-items li {
+  margin: 14px 0;
+}
+.foot-items li a {
+  text-decoration: none;
+  color: #6c757d;
+}
+.contact-info {
+  font-style: italic;
+  color: #6c757d;
+}
+.contact-info p {
+  margin: 14px 0;
+}
+
+.foot-items p {
+  color: #6c757d;
+  margin: 14px 0;
+}
+.foot-items .form-group input {
+  width: 90%;
+  padding: 10px;
+  background-color: #000;
+  color: #6c757d;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #6c757d;
+}
+.foot-items .form-group input:focus {
+  border-bottom: 1px solid #ffffff;
+}
+
+.bordertop {
+  padding: 7rem 0;
+  color: #6c757d;
+  text-align: center;
+}
+.bordertop a {
+  color: #6c757d;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bordertop a:hover {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
